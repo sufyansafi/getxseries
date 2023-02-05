@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:getxseries/homescree.dart';
 
 class Getx1 extends StatefulWidget {
-  const Getx1({super.key});
+   Getx1({super.key , required this.name});
+  String name = "";
 
   @override
   State<Getx1> createState() => _Getx1State();
@@ -14,7 +16,7 @@ class _Getx1State extends State<Getx1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Get X"),
+        title:  Text("Get X"+widget.name),
       ),
       body: Column(
         children: [
@@ -73,6 +75,14 @@ class _Getx1State extends State<Getx1> {
             },
           ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton.small(
+        onPressed: () {
+          Get.to(Homescreen(
+            name: "sufyan darfraz",
+          ));
+        },
+        child: Text("GO"),
       ),
     );
   }
