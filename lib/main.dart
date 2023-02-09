@@ -5,6 +5,7 @@ import 'package:get/route_manager.dart';
 import 'package:getxseries/homescree.dart';
 import 'package:getxseries/languages.dart';
 
+import 'default.dart';
 import 'getx1.dart';
 import 'screen1.dart';
 
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ScreenOne(),
+      home: const Deafault(),
       // getPages: [
       //   GetPage(name: "/", page: ()=> Homescreen(name: "")),
       //   GetPage(name: "/", page: ()=> Getx1(name: '',)),
