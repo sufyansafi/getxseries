@@ -4,6 +4,7 @@ import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get/route_manager.dart';
 import 'package:getxseries/homescree.dart';
 import 'package:getxseries/languages.dart';
+import 'package:getxseries/Signup.dart';
 
 import 'default.dart';
 import 'getx1.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Deafault(),
+      home: const Signupscreen(),
       // getPages: [
       //   GetPage(name: "/", page: ()=> Homescreen(name: "")),
       //   GetPage(name: "/", page: ()=> Getx1(name: '',)),
